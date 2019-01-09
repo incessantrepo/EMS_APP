@@ -29,7 +29,8 @@
       )
     )
   ).data
-)</definition>
+)
+</definition>
         <preferredEditor>legacy</preferredEditor>
         <offlineEnabled>false</offlineEnabled>
     </rule>
