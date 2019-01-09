@@ -24,7 +24,7 @@
       label: "Approve Employee Details",
       firstColumnContents: {
         #"SYSTEM_SYSRULES_textField"(
-          label: "Employee Name",
+          label: "Employee Name1",
           labelPosition: if(ri!readOnly, "ADJACENT", "ABOVE"),
           required: not(ri!readOnly),
           value: ri!record.employeeName,
