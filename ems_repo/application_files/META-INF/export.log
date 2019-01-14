@@ -1,29 +1,24 @@
-Success (4):
+Success (2):
 content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME "EMS_FormatName"
 content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 "EMS_DocumentName"
-content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 "EMS_GetActivityByRecord"
-content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 "EMS_AttachmentsGridRow"
 
-Referenced precedents that were not exported (4):
+Referenced precedents that were not exported (1):
 content 11577 5dc87a26-e9e7-4449-b03a-da1a577e6c21
-content 11570 e06f41de-9824-4bac-88e6-e878d655dda7_CHANGEDSECONSTANT
-content 11564 41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb
-content 11584 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16226
 
 Trace:
-2019-01-14 09:25:16.629 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Begin transport.
-2019-01-14 09:25:16.629 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Retrieving object data.
-2019-01-14 09:25:16.636 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Setting uuids of object references.
-2019-01-14 09:25:16.636 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: [Content:id=11581,versionId=-1,name=EMS_FormatName,description=Given a username, returns the display name in a formatted string,type=32,subtype=1,uuid=97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME,parent=11577,parentName=EMS Utility Rules,parentType=2,log=13602,logName=EMS_FormatName,state=255,visibility=35,security=15,creator=Vidyas,createdTimestamp=2019-01-09 11:00:50.0,updatedTimestamp=2019-01-09 11:00:50.0,size=0,lockedBy=,changesRequireApproval=false,attributes={dep_rules=[Ljava.lang.Long;@59c9e700, system=0, preferredEditor=legacy, hidden=0, offlineEnabled=false, ruletype=1, dep_functions=[Ljava.lang.String;@66434393, definition=if(
+2019-01-14 09:46:53.511 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Begin transport.
+2019-01-14 09:46:53.511 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Retrieving object data.
+2019-01-14 09:46:53.517 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Setting uuids of object references.
+2019-01-14 09:46:53.517 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: [Content:id=11581,versionId=-1,name=EMS_FormatName,description=Given a username, returns the display name in a formatted string,type=32,subtype=1,uuid=97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME,parent=11577,parentName=EMS Utility Rules,parentType=2,log=13602,logName=EMS_FormatName,state=255,visibility=35,security=15,creator=Vidyas,createdTimestamp=2019-01-09 11:00:50.0,updatedTimestamp=2019-01-09 11:00:50.0,size=0,lockedBy=,changesRequireApproval=false,attributes={dep_rules=[Ljava.lang.Long;@10e2cd75, system=0, preferredEditor=legacy, hidden=0, offlineEnabled=false, ruletype=1, dep_functions=[Ljava.lang.String;@33ce99f9, definition=if(
   and(not(isnull(ri!username)), isusernametaken(ri!username)),
   user(ri!username, "firstName") & " " & user(ri!username, "lastName"),
   ri!username
 )
-, dep_types=[Ljava.lang.String;@e9b97d0, metadataExpr=null, parameters=[Lcom.appiancorp.suiteapi.process.TypedVariable;@7c230e53, dep_variables=[[Ljava.lang.String;@6a440730},partition=2,partitionName=/usr/local/appian/_admin/accdocs2]
-2019-01-14 09:25:16.637 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: FreeformRule.forum
-2019-01-14 09:25:16.638 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: TypedVariable[name=username,it=3,v=]
-2019-01-14 09:25:16.638 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: FreeformRule.parent
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@2298d48e[
+, dep_types=[Ljava.lang.String;@6a40e6cf, metadataExpr=null, parameters=[Lcom.appiancorp.suiteapi.process.TypedVariable;@1e1d73e7, dep_variables=[[Ljava.lang.String;@18129c34},partition=2,partitionName=/usr/local/appian/_admin/accdocs2]
+2019-01-14 09:46:53.517 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: FreeformRule.forum
+2019-01-14 09:46:53.518 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: TypedVariable[name=username,it=3,v=]
+2019-01-14 09:46:53.518 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: FreeformRule.parent
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@33429aee[
   ContentRole[name=readers,inherit=true,allowForAll=false]
   ContentRole[name=authors,inherit=true,allowForAll=false]
   ContentRole[name=administrators,inherit=true,allowForAll=false]
@@ -32,24 +27,24 @@ Trace:
   ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
   securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
 ]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Completing produce.
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Exporting binary resources.
-2019-01-14 09:25:16.639 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Serializing object to XML.
-2019-01-14 09:25:16.642 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Object transported.
-2019-01-14 09:25:16.642 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Begin transport.
-2019-01-14 09:25:16.642 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Retrieving object data.
-2019-01-14 09:25:16.649 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Setting uuids of object references.
-2019-01-14 09:25:16.65 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: [Content:id=11580,versionId=-1,name=EMS_DocumentName,description=Gets a document's name and extension to display both together,type=32,subtype=1,uuid=_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225,parent=11577,parentName=EMS Utility Rules,parentType=2,log=13603,logName=EMS_DocumentName,state=255,visibility=35,security=15,creator=Vidyas,createdTimestamp=2019-01-09 11:00:59.0,updatedTimestamp=2019-01-09 11:00:59.0,size=0,lockedBy=,changesRequireApproval=false,attributes={dep_rules=[Ljava.lang.Long;@554a3d22, system=0, preferredEditor=legacy, hidden=0, offlineEnabled=false, ruletype=1, dep_functions=[Ljava.lang.String;@643db4c5, definition=document(ri!document, "name") & "." & document(ri!document, "extension"), dep_types=[Ljava.lang.String;@4c1bc376, metadataExpr=null, parameters=[Lcom.appiancorp.suiteapi.process.TypedVariable;@202c9d1, dep_variables=[[Ljava.lang.String;@625579e},partition=3,partitionName=/usr/local/appian/_admin/accdocs3]
-2019-01-14 09:25:16.65 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: FreeformRule.forum
-2019-01-14 09:25:16.65 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: TypedVariable[name=document,it=13,v=<null>]
-2019-01-14 09:25:16.65 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: FreeformRule.parent
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@b2bb6d1[
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Completing produce.
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Exporting binary resources.
+2019-01-14 09:46:53.519 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Serializing object to XML.
+2019-01-14 09:46:53.521 DEBUG content 13602 97597486-ded5-4b50-a2f8-f297f610d000_FORMATNAME Object transported.
+2019-01-14 09:46:53.521 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Begin transport.
+2019-01-14 09:46:53.521 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Retrieving object data.
+2019-01-14 09:46:53.529 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Setting uuids of object references.
+2019-01-14 09:46:53.529 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: [Content:id=11580,versionId=-1,name=EMS_DocumentName,description=Gets a document's name and extension to display both together,type=32,subtype=1,uuid=_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225,parent=11577,parentName=EMS Utility Rules,parentType=2,log=13603,logName=EMS_DocumentName,state=255,visibility=35,security=15,creator=Vidyas,createdTimestamp=2019-01-09 11:00:59.0,updatedTimestamp=2019-01-09 11:00:59.0,size=0,lockedBy=,changesRequireApproval=false,attributes={dep_rules=[Ljava.lang.Long;@72ca0ea7, system=0, preferredEditor=legacy, hidden=0, offlineEnabled=false, ruletype=1, dep_functions=[Ljava.lang.String;@3a4621aa, definition=document(ri!document, "name") & "." & document(ri!document, "extension"), dep_types=[Ljava.lang.String;@1ad2f186, metadataExpr=null, parameters=[Lcom.appiancorp.suiteapi.process.TypedVariable;@2941dcc7, dep_variables=[[Ljava.lang.String;@bdc507e},partition=3,partitionName=/usr/local/appian/_admin/accdocs3]
+2019-01-14 09:46:53.529 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: FreeformRule.forum
+2019-01-14 09:46:53.529 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: TypedVariable[name=document,it=13,v=<null>]
+2019-01-14 09:46:53.529 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: FreeformRule.parent
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@25a8d79c[
   ContentRole[name=readers,inherit=true,allowForAll=false]
   ContentRole[name=authors,inherit=true,allowForAll=false]
   ContentRole[name=administrators,inherit=true,allowForAll=false]
@@ -58,178 +53,13 @@ Trace:
   ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
   securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
 ]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Completing produce.
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Exporting binary resources.
-2019-01-14 09:25:16.652 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Serializing object to XML.
-2019-01-14 09:25:16.654 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Object transported.
-2019-01-14 09:25:16.654 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Begin transport.
-2019-01-14 09:25:16.654 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Retrieving object data.
-2019-01-14 09:25:16.661 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Setting uuids of object references.
-2019-01-14 09:25:16.662 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: [Content:id=11576,versionId=-1,name=EMS_GetActivityByRecord,description=Returns all activity history for a single record,type=32,subtype=1,uuid=_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266,parent=11564,parentName=EMS Rules and Constants,parentType=2,log=13605,logName=EMS_GetActivityByRecord,state=255,visibility=35,security=14,creator=Vidyas,createdTimestamp=2019-01-09 11:01:08.0,updatedTimestamp=2019-01-09 11:01:08.0,size=0,lockedBy=,changesRequireApproval=true,attributes={dep_rules=[Ljava.lang.Long;@5bbf98ec, system=0, preferredEditor=legacy, hidden=0, offlineEnabled=false, ruletype=1, dep_functions=[Ljava.lang.String;@521cc398, definition=#"SYSTEM_SYSRULES_queryEntity"(
-  entity: #"e06f41de-9824-4bac-88e6-e878d655dda7_CHANGEDSECONSTANT",
-  query: #"SYSTEM_SYSRULES_query"(
-    logicalExpression: #"SYSTEM_SYSRULES_queryLogicalExpression"(
-      operator: "AND",
-      filters: {
-        #"SYSTEM_SYSRULES_queryFilter"(
-          field: "recordId",
-          operator: "=",
-          value: ri!recordId
-        ),
-        if(
-          isnull(ri!userFilter),
-          {},
-          #"SYSTEM_SYSRULES_queryFilter"(
-            field: "who",
-            operator: "=",
-            value: ri!userFilter
-          )
-        )
-      },
-      logicalExpressions: if(
-        isnull(ri!searchTerm),
-        {},
-        #"SYSTEM_SYSRULES_queryLogicalExpression"(
-          operator: "OR",
-          filters: {
-            #"SYSTEM_SYSRULES_queryFilter"(
-              field: "action",
-              operator: "includes",
-              value: ri!searchTerm
-            ),
-            #"SYSTEM_SYSRULES_queryFilter"(
-              field: "details",
-              operator: "includes",
-              value: ri!searchTerm
-            )
-          }
-        )
-      )
-    ),
-    pagingInfo: #"SYSTEM_SYSRULES_pagingInfo"(1, 25, #"SYSTEM_SYSRULES_sortInfo"("when", false))
-  )
-), dep_types=[Ljava.lang.String;@400096d, metadataExpr=null, parameters=[Lcom.appiancorp.suiteapi.process.TypedVariable;@1ab2f109, dep_variables=[[Ljava.lang.String;@3ded724b},partition=1,partitionName=/usr/local/appian/_admin/accdocs1]
-2019-01-14 09:25:16.665 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: FreeformRule.forum
-2019-01-14 09:25:16.665 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: TypedVariable[name=recordId,it=1,v=<null>]
-2019-01-14 09:25:16.666 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: TypedVariable[name=searchTerm,it=3,v=]
-2019-01-14 09:25:16.666 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: TypedVariable[name=userFilter,it=4,v=]
-2019-01-14 09:25:16.666 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: FreeformRule.parent
-2019-01-14 09:25:16.667 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@ffd31b2[
-  ContentRole[name=readers,inherit=true,allowForAll=false]
-  ContentRole[name=authors,inherit=true,allowForAll=false]
-  ContentRole[name=administrators,inherit=true,allowForAll=false]
-  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-  securityVector=14:SEC_PUBLIC=false,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
-]
-2019-01-14 09:25:16.667 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.667 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.667 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.668 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.668 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.668 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.668 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Completing produce.
-2019-01-14 09:25:16.668 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Exporting binary resources.
-2019-01-14 09:25:16.668 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Serializing object to XML.
-2019-01-14 09:25:16.672 DEBUG content 13605 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16266 Object transported.
-2019-01-14 09:25:16.672 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Begin transport.
-2019-01-14 09:25:16.672 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Retrieving object data.
-2019-01-14 09:25:16.681 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Setting uuids of object references.
-2019-01-14 09:25:16.681 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: [Content:id=11585,versionId=-1,name=EMS_AttachmentsGridRow,description=Single row of the Attachments grid,type=32,subtype=1,uuid=_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220,parent=11577,parentName=EMS Utility Rules,parentType=2,log=13606,logName=EMS_AttachmentsGridRow,state=255,visibility=35,security=15,creator=Vidyas,createdTimestamp=2019-01-09 11:01:23.0,updatedTimestamp=2019-01-09 11:01:23.0,size=0,lockedBy=,changesRequireApproval=false,attributes={dep_rules=[Ljava.lang.Long;@5070b00b, system=0, preferredEditor=legacy, hidden=0, offlineEnabled=false, ruletype=1, dep_functions=[Ljava.lang.String;@59504e1f, definition=#"SYSTEM_SYSRULES_gridRowLayout"(
-  id: ri!index,
-  contents: {
-    if(
-      ri!index > ri!oldAttachments,
-      #"SYSTEM_SYSRULES_fileUploadField"(
-        label: "file upload " & ri!index,
-        target: ri!target,
-        value: ri!attachments[ri!index],
-        saveInto: ri!attachments[ri!index]
-      ),
-      #"SYSTEM_SYSRULES_linkField"(
-        label: "document download link " & ri!index,
-        links: #"SYSTEM_SYSRULES_documentDownloadLink"(
-          document: ri!attachments[ri!index],
-          label: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225"(ri!attachments[ri!index])
-        )
-      )
-    ),
-    if(
-      ri!index > ri!oldAttachments,
-      #"SYSTEM_SYSRULES_textField"(
-        label: "uploaded " & ri!index,
-        readOnly: true,
-        value: ""
-      ),
-      #"SYSTEM_SYSRULES_textField"(
-        label: "uploaded " & ri!index,
-        readOnly: true,
-        align: "RIGHT",
-        value: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16226"(document(ri!attachments[ri!index], "dateCreated"))
-      )
-    ),
-    if(
-      ri!readOnly,
-      {},
-      #"SYSTEM_SYSRULES_imageField"(
-        label: "delete " & ri!index,
-        images: #"SYSTEM_SYSRULES_documentImage"(
-          document: #"SYSTEM_SYSRULES_iconIndicator"("REMOVE"),
-          altText: "Remove",
-          caption: "Remove",
-          link: #"SYSTEM_SYSRULES_dynamicLink"(
-            value: ri!index,
-            saveInto: {
-              if(
-                isnull(index(ri!attachments, ri!index, null)),
-                {},
-                a!save(ri!deletedAttachments, append(ri!deletedAttachments, index(ri!attachments, save!value, null)))
-              ),
-              a!save(ri!attachments, remove(ri!attachments, save!value)),
-              if(
-                ri!index > ri!oldAttachments,
-                {},
-                a!save(ri!oldAttachments, ri!oldAttachments - 1)
-              )
-            }
-          )
-        ),
-        size: "ICON"
-      )
-    )
-  }
-), dep_types=[Ljava.lang.String;@34474cd3, metadataExpr=null, parameters=[Lcom.appiancorp.suiteapi.process.TypedVariable;@49891bec, dep_variables=[[Ljava.lang.String;@1cac0a3e},partition=2,partitionName=/usr/local/appian/_admin/accdocs2]
-2019-01-14 09:25:16.686 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: FreeformRule.forum
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: TypedVariable[name=index,it=1,v=<null>]
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: TypedVariable[name=attachments,it=97,v=<null>]
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: TypedVariable[name=target,it=12,v=<null>]
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: TypedVariable[name=readOnly,it=26,v=<null>]
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: TypedVariable[name=oldAttachments,it=1,v=<null>]
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: TypedVariable[name=deletedAttachments,it=113,v=<null>]
-2019-01-14 09:25:16.687 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: FreeformRule.parent
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@1a0ca8a9[
-  ContentRole[name=readers,inherit=true,allowForAll=false]
-  ContentRole[name=authors,inherit=true,allowForAll=false]
-  ContentRole[name=administrators,inherit=true,allowForAll=false]
-  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
-]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Completing produce.
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Exporting binary resources.
-2019-01-14 09:25:16.689 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Serializing object to XML.
-2019-01-14 09:25:16.696 DEBUG content 13606 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220 Object transported.
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Completing produce.
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Exporting binary resources.
+2019-01-14 09:46:53.531 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Serializing object to XML.
+2019-01-14 09:46:53.533 DEBUG content 13603 _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225 Object transported.
