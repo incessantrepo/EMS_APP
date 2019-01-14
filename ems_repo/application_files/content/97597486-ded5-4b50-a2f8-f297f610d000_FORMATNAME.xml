@@ -15,11 +15,25 @@
             <unlogged>false</unlogged>
         </visibility>
         <definition>if(
-  and(not(isnull(ri!username)), isusernametaken(ri!username)),
-  user(ri!username, "firstName") &amp; " " &amp; user(ri!username, "lastName"),
+  and(
+    not(
+      isnull(
+        ri!username
+      )
+    ),
+    isusernametaken(
+      ri!username
+    )
+  ),
+  user(
+    ri!username,
+    "firstName"
+  ) &amp; " " &amp; user(
+    ri!username,
+    "lastName"
+  ),
   ri!username
-)
-</definition>
+)</definition>
         <namedTypedValue>
             <name>username</name>
             <type>
