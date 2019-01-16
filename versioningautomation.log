@@ -1,0 +1,33 @@
+2019-01-16 17:18:48,772 [main] ERROR com.appiancorp.ps.automatedversioning.properties.VersionManagerProperties - java.io.FileNotFoundException: version-manager.properties (No such file or directory)
+2019-01-16 17:18:48,773 [main] INFO  com.appiancorp.ps.automatedversioning.AutomatedVersioningManager - VersionManagerProperties:
+[vcUsername:incessantrepo],
+[vcPassword:***],
+[commitMessage:value not provided],
+[action:addContents],
+[applicationPath:/root/iACD/Log/EmployeeManagementSystem-Patch_1547632127477.zip],
+[adminConsolePath:value not provided],
+[ddlPath:value not provided],
+[ddlDs:value not provided],
+[uuid:_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204],
+[applicationName:value not provided],
+[startHash:value not provided],
+[endHash:value not provided],
+[packagePath:value not provided],
+[versionControlType:GIT],
+[repoUrl:https://github.com/incessantrepo/EMS_APP.git],
+[localRepoPath:/root/iACD/EMS_APP_LOCAL],
+[branchName:value not provided],
+[appianObjectsRepoPath:ems_repo],
+[noUpdate:value not provided],
+
+2019-01-16 17:18:48,953 [main] WARN  org.eclipse.jgit.util.FS - Exception caught during execution of command '[git, config, --system, --edit]' in '/usr/local/git/bin', return code '128', error message 'fatal: Could not switch to '/usr/local/git/etc/': No such file or directory
+'
+2019-01-16 17:18:50,264 [main] INFO  com.appiancorp.ps.automatedversioning.GitObject - Local repo updated successfully
+2019-01-16 17:18:50,337 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Unzipping application to repository
+2019-01-16 17:18:50,380 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16237.xml
+2019-01-16 17:18:50,381 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225.xml
+2019-01-16 17:18:50,381 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/8ce86692-a813-43e9-a433-b3216531dc5f_GETONERECORD.xml
+2019-01-16 17:18:50,381 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/META-INF/MANIFEST.MF
+2019-01-16 17:18:50,381 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/META-INF/export.log
+2019-01-16 17:18:50,381 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Patch detected - Updating Application XML
+2019-01-16 17:18:50,384 [main] ERROR com.appiancorp.ps.automatedversioning.helper.UpdateAppXmlHelper - Error: the application _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204 does not exist in the repository. The file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/application/_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204.xml could not be found. Exiting without committing to source control.
