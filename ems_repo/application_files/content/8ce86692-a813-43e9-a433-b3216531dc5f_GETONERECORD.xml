@@ -27,7 +27,8 @@
       pagingInfo: #"SYSTEM_SYSRULES_pagingInfo"(1, 1)
     )
   ).data
-)</definition>
+)
+/**/</definition>
         <namedTypedValue>
             <name>id</name>
             <type>
