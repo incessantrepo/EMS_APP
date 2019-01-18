@@ -34,7 +34,8 @@ if(
     "lastName"
   ),
   ri!username
-)</definition>
+)
+</definition>
         <namedTypedValue>
             <name>username</name>
             <type>

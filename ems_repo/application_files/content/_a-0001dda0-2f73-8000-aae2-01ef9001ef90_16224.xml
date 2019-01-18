@@ -23,7 +23,8 @@
     value: ri!username
   ),
   dataCount: ri!count
-)</definition>
+)
+/**/</definition>
         <namedTypedValue>
             <name>id</name>
             <type>
