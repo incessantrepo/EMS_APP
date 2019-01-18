@@ -14,13 +14,7 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>document(
-  ri!document,
-  "name"
-) &amp; "." &amp; document(
-  ri!document,
-  "extension"
-)</definition>
+        <definition>document(ri!document, "name") &amp; "." &amp; document(ri!document, "extension")</definition>
         <namedTypedValue>
             <name>document</name>
             <type>
