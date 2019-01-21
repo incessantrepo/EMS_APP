@@ -129,3 +129,41 @@
 2019-01-21 18:40:57,116 [main] INFO  com.appiancorp.ps.automatedversioning.helper.UpdateAppXmlHelper - Successfully updated _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204.xml.
 2019-01-21 18:40:57,116 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Checking for DDLs
 2019-01-21 18:40:57,121 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Checking for Flyway directories
+2019-01-21 18:40:57,172 [main] INFO  com.appiancorp.ps.automatedversioning.GitObject - Committed all changes to repository at /root/iACD/EMS_APP_LOCAL/.git. Commit hash: ba46a969dad91781672d885375da4050a1493d0a
+2019-01-21 18:41:01,214 [main] INFO  com.appiancorp.ps.automatedversioning.GitObject - Changes pushed successfully.
+2019-01-21 18:41:01,220 [main] ERROR com.appiancorp.ps.automatedversioning.properties.MetricsProperties - Error: metrics.properties (No such file or directory)
+2019-01-21 18:43:44,311 [main] ERROR com.appiancorp.ps.automatedversioning.properties.VersionManagerProperties - java.io.FileNotFoundException: version-manager.properties (No such file or directory)
+2019-01-21 18:43:44,312 [main] INFO  com.appiancorp.ps.automatedversioning.AutomatedVersioningManager - VersionManagerProperties:
+[vcUsername:incessantrepo],
+[vcPassword:***],
+[commitMessage:value not provided],
+[action:addContents],
+[applicationPath:/root/iACD/Inbound/IACDPatchTest.zip],
+[adminConsolePath:value not provided],
+[ddlPath:value not provided],
+[flywayPath:value not provided],
+[ddlDs:value not provided],
+[uuid:_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204],
+[applicationName:value not provided],
+[startHash:value not provided],
+[endHash:value not provided],
+[packagePath:value not provided],
+[versionControlType:GIT],
+[repoUrl:https://github.com/incessantrepo/EMS_APP.git],
+[localRepoPath:/root/iACD/EMS_APP_LOCAL],
+[branchName:value not provided],
+[appianObjectsRepoPath:ems_repo],
+[noUpdate:value not provided],
+
+2019-01-21 18:43:45,839 [main] INFO  com.appiancorp.ps.automatedversioning.GitObject - Local repo updated successfully
+2019-01-21 18:43:45,904 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Unzipping application to repository
+2019-01-21 18:43:45,948 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/_a-0000e1f9-27ab-8000-3120-01ef9001ef90_14491.xml
+2019-01-21 18:43:45,948 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/_a-0000e1f9-27ab-8000-3120-01ef9001ef90_14493.xml
+2019-01-21 18:43:45,948 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/_a-0000e1f9-27ab-8000-3120-01ef9001ef90_14495.xml
+2019-01-21 18:43:45,948 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/content/_a-0000e1f9-27ab-8000-3120-01ef9001ef90_14503.xml
+2019-01-21 18:43:45,951 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/META-INF/_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204/MANIFEST.MF
+2019-01-21 18:43:45,952 [main] INFO  com.appiancorp.ps.automatedversioning.VersionUtils - Successfully extracted file /root/iACD/EMS_APP_LOCAL/ems_repo/application_files/META-INF/_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204/export.log
+2019-01-21 18:43:45,952 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Patch detected - Updating Application XML
+2019-01-21 18:43:46,020 [main] INFO  com.appiancorp.ps.automatedversioning.helper.UpdateAppXmlHelper - Successfully updated _a-0001dda0-2f73-8000-aae2-01ef9001ef90_16204.xml.
+2019-01-21 18:43:46,022 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Checking for DDLs
+2019-01-21 18:43:46,030 [main] INFO  com.appiancorp.ps.automatedversioning.VCSAndBuildController - Checking for Flyway directories
