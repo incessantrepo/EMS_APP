@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <rule>
-        <name>TestExp</name>
-        <uuid>_a-0000e0d5-aa1e-8000-3120-01ef9001ef90_13549</uuid>
-        <description></description>
-        <parentUuid>41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb</parentUuid>
+    <constant>
+        <name>EMS_RECORD_ACTION_UPDATE</name>
+        <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16211</uuid>
+        <description>'Update record' action type in record activity history</description>
+        <parentUuid>5dc87a26-e9e7-4449-b03a-da1a577e6c21</parentUuid>
         <visibility>
             <advertise>false</advertise>
             <hierarchy>true</hierarchy>
@@ -14,10 +14,15 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>"Test exp rule updated for testing11111111111111111111110000000000000000000"</definition>
-        <preferredEditor>legacy</preferredEditor>
-        <offlineEnabled>false</offlineEnabled>
-    </rule>
+        <typedValue>
+            <type>
+                <name>string</name>
+                <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+            </type>
+            <value>updated the record</value>
+        </typedValue>
+        <isEnvironmentSpecific>false</isEnvironmentSpecific>
+    </constant>
     <roleMap public="true">
         <role inherit="true" allowForAll="false" name="readers">
             <users/>

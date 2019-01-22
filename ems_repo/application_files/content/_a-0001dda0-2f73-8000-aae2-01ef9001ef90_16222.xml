@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <rule>
-        <name>TestExp</name>
-        <uuid>_a-0000e0d5-aa1e-8000-3120-01ef9001ef90_13549</uuid>
-        <description></description>
-        <parentUuid>41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb</parentUuid>
+        <name>EMS_CreateChartSeries</name>
+        <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16222</uuid>
+        <description>Helper rule to apply over with the contents of a datasubset to create a chart series</description>
+        <parentUuid>5dc87a26-e9e7-4449-b03a-da1a577e6c21</parentUuid>
         <visibility>
             <advertise>false</advertise>
             <hierarchy>true</hierarchy>
@@ -14,7 +14,36 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>"Test exp rule updated for testing11111111111111111111110000000000000000000"</definition>
+        <definition>#"SYSTEM_SYSRULES_chartSeries"(
+  label: index(index(ri!data, ri!field, null), "value", null),
+  data: index(ri!data, "id", null),
+  links: #"SYSTEM_SYSRULES_dynamicLink"(
+    value: index(index(ri!data, ri!field, null), "value", null),
+    saveInto: ri!linkSaveInto
+  )
+)</definition>
+        <namedTypedValue>
+            <name>data</name>
+            <type>
+                <name>Variant</name>
+                <namespace>http://www.appian.com/ae/types/2009</namespace>
+            </type>
+        </namedTypedValue>
+        <namedTypedValue>
+            <name>field</name>
+            <type>
+                <name>string</name>
+                <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+            </type>
+            <value/>
+        </namedTypedValue>
+        <namedTypedValue>
+            <name>linkSaveInto</name>
+            <type>
+                <name>Variant</name>
+                <namespace>http://www.appian.com/ae/types/2009</namespace>
+            </type>
+        </namedTypedValue>
         <preferredEditor>legacy</preferredEditor>
         <offlineEnabled>false</offlineEnabled>
     </rule>

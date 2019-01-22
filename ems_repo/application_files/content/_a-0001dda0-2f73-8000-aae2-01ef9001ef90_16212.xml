@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <rule>
-        <name>TestExp</name>
-        <uuid>_a-0000e0d5-aa1e-8000-3120-01ef9001ef90_13549</uuid>
-        <description></description>
+    <constant>
+        <name>EMS_COLLABORATORS_GROUP</name>
+        <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16212</uuid>
+        <description>Users who can create, update, and send tasks from all records</description>
         <parentUuid>41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,10 +14,15 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>"Test exp rule updated for testing11111111111111111111110000000000000000000"</definition>
-        <preferredEditor>legacy</preferredEditor>
-        <offlineEnabled>false</offlineEnabled>
-    </rule>
+        <typedValue>
+            <type>
+                <name>Group</name>
+                <namespace>http://www.appian.com/ae/types/2009</namespace>
+            </type>
+            <value>_e-0000dda0-2f7f-8000-aae2-011e94011e94_110</value>
+        </typedValue>
+        <isEnvironmentSpecific>false</isEnvironmentSpecific>
+    </constant>
     <roleMap public="true">
         <role inherit="true" allowForAll="false" name="readers">
             <users/>

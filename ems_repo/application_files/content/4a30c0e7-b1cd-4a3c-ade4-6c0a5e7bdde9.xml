@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <rule>
-        <name>TestExp</name>
-        <uuid>_a-0000e0d5-aa1e-8000-3120-01ef9001ef90_13549</uuid>
-        <description></description>
-        <parentUuid>41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb</parentUuid>
+    <folder>
+        <name>EMS Temporary Documents</name>
+        <uuid>4a30c0e7-b1cd-4a3c-ade4-6c0a5e7bdde9</uuid>
+        <description>Temporary location for documents uploaded on a start form</description>
+        <parentUuid>ac86e7dc-018b-42e1-8287-783f00422b75_KC</parentUuid>
         <visibility>
             <advertise>false</advertise>
             <hierarchy>true</hierarchy>
@@ -14,10 +14,7 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>"Test exp rule updated for testing11111111111111111111110000000000000000000"</definition>
-        <preferredEditor>legacy</preferredEditor>
-        <offlineEnabled>false</offlineEnabled>
-    </rule>
+    </folder>
     <roleMap public="true">
         <role inherit="true" allowForAll="false" name="readers">
             <users/>

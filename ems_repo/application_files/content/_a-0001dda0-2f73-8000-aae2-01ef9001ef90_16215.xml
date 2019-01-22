@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <rule>
-        <name>TestExp</name>
-        <uuid>_a-0000e0d5-aa1e-8000-3120-01ef9001ef90_13549</uuid>
-        <description></description>
+    <constant>
+        <name>EMS_EMS_RECORD_TYPE</name>
+        <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16215</uuid>
+        <description>EMS record type</description>
         <parentUuid>41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -14,10 +14,18 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>"Test exp rule updated for testing11111111111111111111110000000000000000000"</definition>
-        <preferredEditor>legacy</preferredEditor>
-        <offlineEnabled>false</offlineEnabled>
-    </rule>
+        <typedValue>
+            <type>
+                <name>RecordType</name>
+                <namespace>http://www.appian.com/ae/types/2009</namespace>
+            </type>
+            <value a:id="-1" a:uuid="8d17c056-5a85-4750-838b-237b1ef2d71a" name="">
+                <a:isSystem>false</a:isSystem>
+                <a:security>16383</a:security>
+            </value>
+        </typedValue>
+        <isEnvironmentSpecific>false</isEnvironmentSpecific>
+    </constant>
     <roleMap public="true">
         <role inherit="true" allowForAll="false" name="readers">
             <users/>
