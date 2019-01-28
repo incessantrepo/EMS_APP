@@ -16,90 +16,18 @@
         </visibility>
         <definition>choose(
   ri!status + 1,
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "PROGRESS_RUNNING"
-    ),
-    altText: "Assigned",
-    caption: "Assigned"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "PROGRESS_RUNNING"
-    ),
-    altText: "Viewed by Assignee",
-    caption: "Viewed by Assignee"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_OK"
-    ),
-    altText: "Completed",
-    caption: "Completed"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_NOTDONE"
-    ),
-    altText: "Not Started",
-    caption: "Not Started"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_NOTDONE"
-    ),
-    altText: "Cancelled",
-    caption: "Cancelled"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "PROGRESS_PAUSED"
-    ),
-    altText: "Paused",
-    caption: "Paused"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_WARN"
-    ),
-    altText: "Unattended",
-    caption: "Unattended"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_ERROR"
-    ),
-    altText: "Aborted",
-    caption: "Aborted"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_ERROR"
-    ),
-    altText: "Cancelled By Exception",
-    caption: "Cancelled By Exception"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "PROGRESS_RUNNING"
-    ),
-    altText: "Submitted",
-    caption: "Submitted"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "PROGRESS_RUNNING"
-    ),
-    altText: "Running",
-    caption: "Running"
-  ),
-  #"SYSTEM_SYSRULES_documentImage"(
-    document: #"SYSTEM_SYSRULES_iconIndicator"(
-      icon: "STATUS_ERROR"
-    ),
-    altText: "Error",
-    caption: "Error"
-  )
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Assigned", caption: "Assigned"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Viewed by Assignee", caption: "Viewed by Assignee"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_OK"), altText: "Completed", caption: "Completed"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_NOTDONE"), altText: "Not Started", caption: "Not Started"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_NOTDONE"), altText: "Cancelled", caption: "Cancelled"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_PAUSED"), altText: "Paused", caption: "Paused"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_WARN"), altText: "Unattended", caption: "Unattended"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_ERROR"), altText: "Aborted", caption: "Aborted"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_ERROR"), altText: "Cancelled By Exception", caption: "Cancelled By Exception"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Submitted", caption: "Submitted"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Running", caption: "Running"),
+  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_ERROR"), altText: "Error", caption: "Error")
 )</definition>
         <namedTypedValue>
             <name>status</name>

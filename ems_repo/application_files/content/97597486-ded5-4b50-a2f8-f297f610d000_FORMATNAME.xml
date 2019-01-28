@@ -14,25 +14,9 @@
             <system>false</system>
             <unlogged>false</unlogged>
         </visibility>
-        <definition>/* format name test111111111*/
-if(
-  and(
-    not(
-      isnull(
-        ri!username
-      )
-    ),
-    isusernametaken(
-      ri!username
-    )
-  ),
-  user(
-    ri!username,
-    "firstName"
-  ) &amp; " " &amp; user(
-    ri!username,
-    "lastName"
-  ),
+        <definition>if(
+  and(not(isnull(ri!username)), isusernametaken(ri!username)),
+  user(ri!username, "firstName") &amp; " " &amp; user(ri!username, "lastName"),
   ri!username
 )
 </definition>
