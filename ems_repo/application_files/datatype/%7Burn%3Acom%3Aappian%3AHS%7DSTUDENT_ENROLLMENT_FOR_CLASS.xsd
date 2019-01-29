@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="urn:com:appian:HS"
+  xmlns:tns="urn:com:appian:HS" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="%7Burn%3Acom%3Aappian%3AHS%7DSTUDENT.xsd"/>
+  <xsd:complexType name="STUDENT_ENROLLMENT_FOR_CLASS">
+    <xsd:annotation>
+      <xsd:appinfo source="appian.jpa">
+				@Table(name="CLASS")
+			</xsd:appinfo>
+      <xsd:appinfo source="http://www.appian.com/ae/types/2009">
+        <ns2:Metadata xmlns:ns2="http://www.appian.com/ae/types/2009">
+          <ns2:versionUuid>0000e1d6-df9d-8000-f92f-7f0000014e7a</ns2:versionUuid>
+          <ns2:history>
+            <ns2:historyInfo versionUuid="0000e1d6-df9d-8000-f92f-7f0000014e7a"/>
+          </ns2:history>
+        </ns2:Metadata>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element form="qualified" name="id" type="xsd:int">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">
+						@Id
+						@GeneratedValue
+						@Column(name="id")
+					</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element form="qualified" name="code" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">
+							@Column(name="code")
+					</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="students" type="tns:STUDENT">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">
+						@ManyToMany(cascade=NONE, indexed=false)
+						@JoinTable(
+							name="ENROLLMENT",
+							joinColumns=@JoinColumn(name="class_id"),
+							inverseJoinColumns=@JoinColumn(name="student_id")
+						)
+					</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
