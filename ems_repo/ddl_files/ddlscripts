@@ -1,0 +1,1 @@
+Update table iACD_BuildItemsMilestoneStatus set statusId_int = 2 where id_int=1
