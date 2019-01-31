@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e15f-291f-8000-d194-01ef9001ef90_90316</versionUuid>
     <rule>
         <name>EMS_FormatStatusDisplay</name>
         <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16233</uuid>
@@ -16,18 +17,90 @@
         </visibility>
         <definition>choose(
   ri!status + 1,
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Assigned", caption: "Assigned"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Viewed by Assignee", caption: "Viewed by Assignee"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_OK"), altText: "Completed", caption: "Completed"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_NOTDONE"), altText: "Not Started", caption: "Not Started"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_NOTDONE"), altText: "Cancelled", caption: "Cancelled"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_PAUSED"), altText: "Paused", caption: "Paused"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_WARN"), altText: "Unattended", caption: "Unattended"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_ERROR"), altText: "Aborted", caption: "Aborted"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_ERROR"), altText: "Cancelled By Exception", caption: "Cancelled By Exception"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Submitted", caption: "Submitted"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "PROGRESS_RUNNING"), altText: "Running", caption: "Running"),
-  #"SYSTEM_SYSRULES_documentImage"(document: #"SYSTEM_SYSRULES_iconIndicator"(icon: "STATUS_ERROR"), altText: "Error", caption: "Error")
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "PROGRESS_RUNNING"
+    ),
+    altText: "Assigned",
+    caption: "Assigned"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "PROGRESS_RUNNING"
+    ),
+    altText: "Viewed by Assignee",
+    caption: "Viewed by Assignee"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_OK"
+    ),
+    altText: "Completed",
+    caption: "Completed"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_NOTDONE"
+    ),
+    altText: "Not Started",
+    caption: "Not Started"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_NOTDONE"
+    ),
+    altText: "Cancelled",
+    caption: "Cancelled"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "PROGRESS_PAUSED"
+    ),
+    altText: "Paused",
+    caption: "Paused"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_WARN"
+    ),
+    altText: "Unattended",
+    caption: "Unattended"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_ERROR"
+    ),
+    altText: "Aborted",
+    caption: "Aborted"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_ERROR"
+    ),
+    altText: "Cancelled By Exception",
+    caption: "Cancelled By Exception"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "PROGRESS_RUNNING"
+    ),
+    altText: "Submitted",
+    caption: "Submitted"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "PROGRESS_RUNNING"
+    ),
+    altText: "Running",
+    caption: "Running"
+  ),
+  #"SYSTEM_SYSRULES_documentImage"(
+    document: #"SYSTEM_SYSRULES_iconIndicator"(
+      icon: "STATUS_ERROR"
+    ),
+    altText: "Error",
+    caption: "Error"
+  )
 )</definition>
         <namedTypedValue>
             <name>status</name>
@@ -65,4 +138,9 @@
             <groups/>
         </role>
     </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_70035"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_81064"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_90316"/>
+    </history>
 </contentHaul>

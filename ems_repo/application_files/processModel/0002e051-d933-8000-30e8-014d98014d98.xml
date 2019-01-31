@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <processModelHaul>
+  <versionUuid>0005e202-471a-8000-d191-014d98014d98</versionUuid>
   <folderUuid>921e1880-f66f-4e42-831e-d80b176f2556</folderUuid>
   <roleMap>
     <role name="ADMIN_OWNER">
@@ -815,4 +816,9 @@
     </pm>
   </process_model_port>
   <isPublished>true</isPublished>
+  <history>
+    <historyInfo versionUuid="0005e1f2-8d67-8000-d191-014d98014d98"/>
+    <historyInfo versionUuid="0005e1f9-384a-8000-d191-014d98014d98"/>
+    <historyInfo versionUuid="0005e202-471a-8000-d191-014d98014d98"/>
+  </history>
 </processModelHaul>

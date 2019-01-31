@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e15f-291f-8000-d194-01ef9001ef90_90177</versionUuid>
     <rule>
         <name>EMS_AttachmentsGridRow</name>
         <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16220</uuid>
@@ -29,7 +30,9 @@
         label: "document download link " &amp; ri!index,
         links: #"SYSTEM_SYSRULES_documentDownloadLink"(
           document: ri!attachments[ri!index],
-          label: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225"(ri!attachments[ri!index])
+          label: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16225"(
+            ri!attachments[ri!index]
+          )
         )
       )
     ),
@@ -44,7 +47,12 @@
         label: "uploaded " &amp; ri!index,
         readOnly: true,
         align: "RIGHT",
-        value: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16226"(document(ri!attachments[ri!index], "dateCreated"))
+        value: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16226"(
+          document(
+            ri!attachments[ri!index],
+            "dateCreated"
+          )
+        )
       )
     ),
     if(
@@ -53,22 +61,49 @@
       #"SYSTEM_SYSRULES_imageField"(
         label: "delete " &amp; ri!index,
         images: #"SYSTEM_SYSRULES_documentImage"(
-          document: #"SYSTEM_SYSRULES_iconIndicator"("REMOVE"),
+          document: #"SYSTEM_SYSRULES_iconIndicator"(
+            "REMOVE"
+          ),
           altText: "Remove",
           caption: "Remove",
           link: #"SYSTEM_SYSRULES_dynamicLink"(
             value: ri!index,
             saveInto: {
               if(
-                isnull(index(ri!attachments, ri!index, null)),
+                isnull(
+                  index(
+                    ri!attachments,
+                    ri!index,
+                    null
+                  )
+                ),
                 {},
-                a!save(ri!deletedAttachments, append(ri!deletedAttachments, index(ri!attachments, save!value, null)))
+                a!save(
+                  ri!deletedAttachments,
+                  append(
+                    ri!deletedAttachments,
+                    index(
+                      ri!attachments,
+                      save!value,
+                      null
+                    )
+                  )
+                )
               ),
-              a!save(ri!attachments, remove(ri!attachments, save!value)),
+              a!save(
+                ri!attachments,
+                remove(
+                  ri!attachments,
+                  save!value
+                )
+              ),
               if(
                 ri!index &gt; ri!oldAttachments,
                 {},
-                a!save(ri!oldAttachments, ri!oldAttachments - 1)
+                a!save(
+                  ri!oldAttachments,
+                  ri!oldAttachments - 1
+                )
               )
             }
           )
@@ -149,4 +184,9 @@
             <groups/>
         </role>
     </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_69914"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_80934"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_90177"/>
+    </history>
 </contentHaul>
