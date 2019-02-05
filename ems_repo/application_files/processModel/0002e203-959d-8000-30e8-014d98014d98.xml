@@ -370,7 +370,7 @@
           <on-complete-keep-form-data>false</on-complete-keep-form-data>
           <skipNotification>false</skipNotification>
         </node>
-        <node uuid="0000e203-9623-8000-30e8-014d98014d98">
+        <node uuid="0000e205-543f-8000-30e8-014d98014d98">
           <guiId>2</guiId>
           <owner/>
           <icon id="998"/>
@@ -379,17 +379,17 @@
             <string-map>
               <pair>
                 <locale country="US" lang="en" variant=""/>
-                <value><![CDATA[Move To Filesystem]]></value>
+                <value><![CDATA[Move To Collab]]></value>
               </pair>
             </string-map>
           </fname>
-          <x>308</x>
+          <x>280</x>
           <y>280</y>
           <display>
             <string-map>
               <pair>
                 <locale country="US" lang="en" variant=""/>
-                <value><![CDATA[Move To Filesystem]]></value>
+                <value><![CDATA[Move To Collab]]></value>
               </pair>
             </string-map>
           </display>
@@ -406,13 +406,13 @@
           <lane/>
           <overrideLaneAssignment>false</overrideLaneAssignment>
           <ac>
-            <local-id>appian-collab-filesystem-utilities.MoveToFilesystem</local-id>
-            <name><![CDATA[Move To Filesystem]]></name>
+            <local-id>com.incessant.plugins.localfiles.MoveToCollab</local-id>
+            <name><![CDATA[Move To Collab]]></name>
             <acps>
-              <acp name="Destination">
-                <a:value xsi:nil="true" xsi:type="xsd:string"/>
-                <a:local-id>Destination</a:local-id>
-                <a:expr><![CDATA[="/root/temp3"]]></a:expr>
+              <acp name="CopyOnlyIfUpdated">
+                <a:value xmlns="" xsi:type="xsd:boolean">true</a:value>
+                <a:local-id>CopyOnlyIfUpdated</a:local-id>
+                <a:expr/>
                 <a:required>0</a:required>
                 <a:editable>1</a:editable>
                 <a:assign-to-pv/>
@@ -422,11 +422,11 @@
                 <a:enumeration/>
                 <a:customDisplayReference/>
               </acp>
-              <acp name="Documents">
-                <a:value xmlns="" xsi:type="a:CollaborationDocument?list">
-                  <item a:id="_a-0000ddde-9f3b-8000-aae2-01ef9001ef90_15242"/>
-                </a:value>
-                <a:local-id>Documents</a:local-id>
+              <acp name="Destination">
+                <a:value
+                  a:id="_a-0000dd7b-a4a4-8000-9ccd-01ef9001ef90_69430"
+                  xmlns="" xsi:type="a:CollaborationFolder"/>
+                <a:local-id>Destination</a:local-id>
                 <a:expr/>
                 <a:required>0</a:required>
                 <a:editable>1</a:editable>
@@ -438,7 +438,7 @@
                 <a:customDisplayReference/>
               </acp>
               <acp name="Files">
-                <a:value xsi:nil="true" xsi:type="a:Text?list"/>
+                <a:value xsi:nil="true" xsi:type="a:CollaborationDocument?list"/>
                 <a:local-id>output-Files</a:local-id>
                 <a:expr/>
                 <a:required>0</a:required>
@@ -450,10 +450,10 @@
                 <a:enumeration/>
                 <a:customDisplayReference/>
               </acp>
-              <acp name="Folder">
-                <a:value xsi:nil="true" xsi:type="a:CollaborationFolder"/>
-                <a:local-id>Folder</a:local-id>
-                <a:expr/>
+              <acp name="Path">
+                <a:value xsi:nil="true" xsi:type="xsd:string"/>
+                <a:local-id>Path</a:local-id>
+                <a:expr><![CDATA[="usr/local/kiran.xml"]]></a:expr>
                 <a:required>0</a:required>
                 <a:editable>1</a:editable>
                 <a:assign-to-pv/>
@@ -464,7 +464,7 @@
                 <a:customDisplayReference/>
               </acp>
               <acp name="RemoveAfterCopy">
-                <a:value xsi:nil="true" xsi:type="xsd:boolean"/>
+                <a:value xmlns="" xsi:type="xsd:boolean">false</a:value>
                 <a:local-id>RemoveAfterCopy</a:local-id>
                 <a:expr/>
                 <a:required>0</a:required>
@@ -478,9 +478,7 @@
               </acp>
             </acps>
             <custom-params/>
-            <output-exprs>
-              <el typeFlag="1"><![CDATA[Files:AC!Files]]></el>
-            </output-exprs>
+            <output-exprs/>
             <requires-user-interaction>true</requires-user-interaction>
             <run-as>
               <performer id="0"/>
@@ -521,7 +519,7 @@
               <to>1</to>
               <toObjectType>ap.gui.Node</toObjectType>
               <fromAnchor>1</fromAnchor>
-              <toAnchor>3</toAnchor>
+              <toAnchor>2</toAnchor>
               <showArrowhead>true</showArrowhead>
               <flowLabel/>
               <label>
